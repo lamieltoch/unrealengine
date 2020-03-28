@@ -1,0 +1,21 @@
+﻿  Compiling game modules for hot reload
+  Parsing headers for TutorielInventaireCEditor
+    Running UnrealHeaderTool "A:\programmation\TutorielInventaireC\TutorielInventaireC.uproject" "A:\programmation\TutorielInventaireC\Intermediate\Build\Win64\TutorielInventaireCEditor\Development\TutorielInventaireCEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for TutorielInventaireCEditor in 12,5315626 seconds
+  Performing 3 actions (4 in parallel)
+  TutoJoueur.cpp
+A:\programmation\TutorielInventaireC\Source\TutorielInventaireC\TutoJoueur.cpp(18): error C2065: 'ACraft' : identificateur non déclaré
+A:\programmation\TutorielInventaireC\Source\TutorielInventaireC\TutoJoueur.cpp(18): error C2146: erreur de syntaxe : absence de ';' avant l'identificateur 'KitSoin'
+A:\programmation\TutorielInventaireC\Source\TutorielInventaireC\TutoJoueur.cpp(18): error C2065: 'KitSoin' : identificateur non déclaré
+A:\programmation\TutorielInventaireC\Source\TutorielInventaireC\TutoJoueur.cpp(19): error C2065: 'KitSoin' : identificateur non déclaré
+A:\programmation\TutorielInventaireC\Source\TutorielInventaireC\TutoJoueur.cpp(20): error C2065: 'KitSoin' : identificateur non déclaré
+A:\programmation\TutorielInventaireC\Source\TutorielInventaireC\TutoJoueur.cpp(21): error C2065: 'KitSoin' : identificateur non déclaré
+A:\programmation\TutorielInventaireC\Source\TutorielInventaireC\TutoJoueur.cpp(21): error C2059: erreur de syntaxe : '.'
+A:\programmation\TutorielInventaireC\Source\TutorielInventaireC\TutoJoueur.cpp(21): error C2059: erreur de syntaxe : ')'
+A:\programmation\TutorielInventaireC\Source\TutorielInventaireC\TutoJoueur.cpp(22): error C2059: erreur de syntaxe : '}'
+A:\programmation\TutorielInventaireC\Source\TutorielInventaireC\TutoJoueur.cpp(22): error C2143: erreur de syntaxe : absence de ';' avant '}'
+A:\programmation\TutorielInventaireC\Source\TutorielInventaireC\TutoJoueur.cpp(26): error C2143: erreur de syntaxe : absence de ';' avant '{'
+A:\programmation\TutorielInventaireC\Source\TutorielInventaireC\TutoJoueur.cpp(26): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+ERROR : UBT error : Failed to produce item: A:\programmation\TutorielInventaireC\Binaries\Win64\UE4Editor-TutorielInventaireC-7266.dll
+  Total build time: 30,27 seconds (Local executor: 0,00 seconds)
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.MakeFile.Targets(44,5): error MSB3075: La commande "A:\UnrealEngine\UE_4.17\Engine\Build\BatchFiles\Build.bat TutorielInventaireCEditor Win64 Development "A:\programmation\TutorielInventaireC\TutorielInventaireC.uproject" -waitmutex" s'est arrêtée avec le code 5. Assurez-vous d'avoir les droits suffisants pour exécuter cette commande.

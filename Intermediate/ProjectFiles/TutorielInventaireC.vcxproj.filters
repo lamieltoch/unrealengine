@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\TutorielInventaireC.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{39B73852-2861-4CB5-A729-2D0FA06D806C}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TutorielInventaireC.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\TutorielInventaireCEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{15F85D10-B963-4191-8E19-DCDB98164991}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\TutorielInventaireC">
+      <UniqueIdentifier>{4DED0799-EAD6-4DC2-8FC6-080B69E5AE6C}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TutorielInventaireC\TutorielInventaireC.Build.cs">
+      <Filter>Source\TutorielInventaireC</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\TutorielInventaireC\TutorielInventaireC.cpp">
+      <Filter>Source\TutorielInventaireC</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TutorielInventaireC\TutorielInventaireC.h">
+      <Filter>Source\TutorielInventaireC</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TutorielInventaireC\TutorielInventaireCGameModeBase.cpp">
+      <Filter>Source\TutorielInventaireC</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TutorielInventaireC\TutorielInventaireCGameModeBase.h">
+      <Filter>Source\TutorielInventaireC</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\TutorielInventaireC\TutoDataBase.h">
+      <Filter>Source\TutorielInventaireC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TutorielInventaireC\TutoJoueur.h">
+      <Filter>Source\TutorielInventaireC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TutorielInventaireC\TutoGameMode.h">
+      <Filter>Source\TutorielInventaireC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TutorielInventaireC\TutoItem.h">
+      <Filter>Source\TutorielInventaireC</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\TutorielInventaireC\TutoDataBase.cpp">
+      <Filter>Source\TutorielInventaireC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TutorielInventaireC\TutoJoueur.cpp">
+      <Filter>Source\TutorielInventaireC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TutorielInventaireC\TutoGameMode.cpp">
+      <Filter>Source\TutorielInventaireC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TutorielInventaireC\TutoItem.cpp">
+      <Filter>Source\TutorielInventaireC</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
