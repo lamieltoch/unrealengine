@@ -41,6 +41,11 @@ struct FRequirement {
 		ID = -1;
 		Quantite = 1;
 	}
+
+	FRequirement(int32 id, int32 quantite) {
+		ID = id;
+		Quantite = quantite;
+	}
 };
 
 USTRUCT(Blueprintable)

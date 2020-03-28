@@ -20,8 +20,8 @@ void EmptyLinkFunctionForGeneratedCodeTutorielInventaireC_init() {}
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), nullptr, FName(TEXT("/Script/TutorielInventaireC")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x6AB7FF34;
-			Guid.B = 0x5D48FFCC;
+			Guid.A = 0xFD06646A;
+			Guid.B = 0x21C8A6BE;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

@@ -3,7 +3,7 @@
 #include "TutoJoueur.h"
 #include "Engine.h"
 #include "TutoItem.h"
-#include "TutoDataBase.h"
+//#include "TutoDataBase.h"
 
 
 // Sets default values
@@ -15,10 +15,44 @@ ATutoJoueur::ATutoJoueur()
 	InventaireVisuel = false;
 
 
-	ACraft KitSoin;
+	FCraft KitSoin;
+	KitSoin.ID = 0;
 	KitSoin.Nom = "Kit de Soin";
 	KitSoin.Quantite = 0;
-	KitSoin.Requirements.Add({ .ID = 0, .Quantite = 1 });
+	KitSoin.Requirements.Add(FRequirement(0, 1));
+	KitSoin.Requirements.Add(FRequirement(2, 1));
+	Craft.Add(KitSoin);
+
+	FCraft Couteau;
+	Couteau.Nom = "Couteau";
+	Couteau.ID = 1;
+	Couteau.Quantite = 0;
+	Couteau.Requirements.Add(FRequirement(4, 1));
+	Couteau.Requirements.Add(FRequirement(5, 1));
+	Couteau.Requirements.Add(FRequirement(1, 1));
+	Craft.Add(Couteau);
+
+	FCraft Crochetage;
+	Crochetage.ID = 2;
+	Crochetage.Nom = "Crochetage";
+	Crochetage.Quantite = 0;
+	Crochetage.Requirements.Add(FRequirement(1, 2));
+	Craft.Add(Crochetage);
+
+	FCraft Molotov;
+	Molotov.ID = 3;
+	Molotov.Nom = "Molotov";
+	Molotov.Quantite = 0;
+	Molotov.Requirements.Add(FRequirement(2, 1));
+	Molotov.Requirements.Add(FRequirement(3, 1));
+	Craft.Add(Molotov);
+
+	FCraft Bandage;
+	Bandage.ID = 4;
+	Bandage.Nom = "Bandage";
+	Bandage.Quantite = 0;
+	Bandage.Requirements.Add(FRequirement(3, 2));
+	Craft.Add(Bandage);
 }
 
 // Called when the game starts or when spawned
@@ -48,6 +82,9 @@ void ATutoJoueur::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 	PlayerInputComponent->BindAxis("Droite", this, &ATutoJoueur::Droite);
 	PlayerInputComponent->BindAxis("Tourner", this, &ATutoJoueur::AddControllerYawInput);
 	PlayerInputComponent->BindAxis("Lever", this, &ATutoJoueur::AddControllerPitchInput);
+
+	PlayerInputComponent->BindAction("MonterCraft", IE_Pressed, this, &ATutoJoueur::MonteCraft);
+	PlayerInputComponent->BindAction("BaisserCraft", IE_Pressed, this, &ATutoJoueur::BaisseCraft);
 }
 
 inline int32 ATutoJoueur::GetNumberFromID(int32 ID) {
@@ -134,23 +171,41 @@ void ATutoJoueur::ChangeInventoryState()
 
 void ATutoJoueur::Avant(float value)
 {
-	if (Controller != NULL && value != 0.0f) {
-		FRotator Rotation = Controller->GetControlRotation();
-		if (GetCharacterMovement()->IsMovingOnGround() || GetCharacterMovement()->IsFalling()) {
-			Rotation.Pitch = 0.0f;
-		}
+	if (!InventaireVisuel) { //c'est pour éviter de bouger quand on ouvre l'inventaire
+		if (Controller != NULL && value != 0.0f) {
+			FRotator Rotation = Controller->GetControlRotation();
+			if (GetCharacterMovement()->IsMovingOnGround() || GetCharacterMovement()->IsFalling()) {
+				Rotation.Pitch = 0.0f;
+			}
 
-		const FVector direction = FRotationMatrix(Rotation).GetScaledAxis(EAxis::X);
-		AddMovementInput(direction, value);
+			const FVector direction = FRotationMatrix(Rotation).GetScaledAxis(EAxis::X);
+			AddMovementInput(direction, value);
+		}
 	}
 }
 
 void ATutoJoueur::Droite(float value)
 {
-	if (Controller != NULL && value != 0.0f) {
-		FRotator Rotation = Controller->GetControlRotation();
-		const FVector direction = FRotationMatrix(Rotation).GetScaledAxis(EAxis::Y);
-		AddMovementInput(direction, value);
+	if (!InventaireVisuel) {
+		if (Controller != NULL && value != 0.0f) {
+			FRotator Rotation = Controller->GetControlRotation();
+			const FVector direction = FRotationMatrix(Rotation).GetScaledAxis(EAxis::Y);
+			AddMovementInput(direction, value);
+		}
+	}
+}
+
+void ATutoJoueur::MonteCraft()
+{
+	if (InventaireVisuel && IndexCraft > 0) {
+		IndexCraft--;
+	}
+}
+
+void ATutoJoueur::BaisseCraft()
+{
+	if (InventaireVisuel && IndexCraft < Craft.Num()) {
+		IndexCraft++;
 	}
 }
 

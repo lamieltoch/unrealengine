@@ -82,4 +82,10 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Deplacment")
 		void Droite(float value);
+
+	UFUNCTION()
+		void MonteCraft();
+
+	UFUNCTION()
+		void BaisseCraft();
 };

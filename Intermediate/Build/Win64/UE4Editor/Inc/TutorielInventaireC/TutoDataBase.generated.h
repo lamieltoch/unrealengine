@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define TUTORIELINVENTAIREC_TutoDataBase_generated_h
 
-#define TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_48_GENERATED_BODY \
+#define TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_53_GENERATED_BODY \
 	friend TUTORIELINVENTAIREC_API class UScriptStruct* Z_Construct_UScriptStruct_FCraft(); \
 	TUTORIELINVENTAIREC_API static class UScriptStruct* StaticStruct();
 
@@ -28,9 +28,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	TUTORIELINVENTAIREC_API static class UScriptStruct* StaticStruct();
 
 
-#define TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_73_RPC_WRAPPERS
-#define TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_73_RPC_WRAPPERS_NO_PURE_DECLS
-#define TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_73_INCLASS_NO_PURE_DECLS \
+#define TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_78_RPC_WRAPPERS
+#define TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_78_RPC_WRAPPERS_NO_PURE_DECLS
+#define TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_78_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATutoDataBase(); \
 	friend TUTORIELINVENTAIREC_API class UClass* Z_Construct_UClass_ATutoDataBase(); \
@@ -40,7 +40,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_73_INCLASS \
+#define TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_78_INCLASS \
 private: \
 	static void StaticRegisterNativesATutoDataBase(); \
 	friend TUTORIELINVENTAIREC_API class UClass* Z_Construct_UClass_ATutoDataBase(); \
@@ -50,7 +50,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_73_STANDARD_CONSTRUCTORS \
+#define TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_78_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ATutoDataBase(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ATutoDataBase) \
@@ -63,7 +63,7 @@ private: \
 public:
 
 
-#define TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_73_ENHANCED_CONSTRUCTORS \
+#define TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_78_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ATutoDataBase(ATutoDataBase&&); \
@@ -74,26 +74,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATutoDataBase); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ATutoDataBase)
 
 
-#define TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_73_PRIVATE_PROPERTY_OFFSET
-#define TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_70_PROLOG
-#define TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_73_GENERATED_BODY_LEGACY \
+#define TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_78_PRIVATE_PROPERTY_OFFSET
+#define TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_75_PROLOG
+#define TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_78_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_73_PRIVATE_PROPERTY_OFFSET \
-	TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_73_RPC_WRAPPERS \
-	TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_73_INCLASS \
-	TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_73_STANDARD_CONSTRUCTORS \
+	TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_78_PRIVATE_PROPERTY_OFFSET \
+	TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_78_RPC_WRAPPERS \
+	TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_78_INCLASS \
+	TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_78_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_73_GENERATED_BODY \
+#define TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_78_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_73_PRIVATE_PROPERTY_OFFSET \
-	TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_73_RPC_WRAPPERS_NO_PURE_DECLS \
-	TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_73_INCLASS_NO_PURE_DECLS \
-	TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_73_ENHANCED_CONSTRUCTORS \
+	TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_78_PRIVATE_PROPERTY_OFFSET \
+	TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_78_RPC_WRAPPERS_NO_PURE_DECLS \
+	TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_78_INCLASS_NO_PURE_DECLS \
+	TutorielInventaireC_Source_TutorielInventaireC_TutoDataBase_h_78_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

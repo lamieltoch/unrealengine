@@ -648,3 +648,110 @@ LogInit: Object subsystem initialized
 [2020.03.28-15.24.19:161][986]Display: HotReload successful (2 functions remapped  3 scriptstructs remapped)
 [2020.03.28-15.24.19:209][986]LogContentBrowser: Native class hierarchy populated in 0.0153 seconds. Added 2393 classes and 506 folders.
 [2020.03.28-15.24.19:214][986]Display: HotReload took  3.5s.
+[2020.03.28-15.42.08:512][316]LogHotReload: New module detected: UE4Editor-TutorielInventaireC-3327.dll
+[2020.03.28-15.42.09:867][321]LogHotReload: Starting Hot-Reload from IDE
+[2020.03.28-15.42.11:540][321]LogClass: Craft HotReload.
+[2020.03.28-15.42.11:540][321]LogClass: Requirement HotReload.
+[2020.03.28-15.42.11:540][321]LogClass: Item HotReload.
+[2020.03.28-15.42.11:548][321]LogContentBrowser: Native class hierarchy updated for 'TutorielInventaireC' in 0.0026 seconds. Added 5 classes and 2 folders.
+[2020.03.28-15.42.11:550][321]Display: HotReload successful (10 functions remapped  3 scriptstructs remapped)
+[2020.03.28-15.42.11:600][321]LogContentBrowser: Native class hierarchy populated in 0.0154 seconds. Added 2393 classes and 506 folders.
+[2020.03.28-15.42.11:604][321]Display: HotReload took  1.7s.
+[2020.03.28-15.48.26:279][445]LogHotReload: New module detected: UE4Editor-TutorielInventaireC-7340.dll
+[2020.03.28-15.48.27:633][450]LogHotReload: Starting Hot-Reload from IDE
+[2020.03.28-15.48.27:744][450]LogClass: Craft HotReload.
+[2020.03.28-15.48.27:744][450]LogClass: Requirement HotReload.
+[2020.03.28-15.48.27:744][450]LogClass: Item HotReload.
+[2020.03.28-15.48.27:747][450]LogHotReload: Re-instancing TutoJoueur after hot-reload.
+[2020.03.28-15.48.27:882][450]LogContentBrowser: Native class hierarchy updated for 'TutorielInventaireC' in 0.0026 seconds. Added 5 classes and 2 folders.
+[2020.03.28-15.48.27:884][450]Display: HotReload successful (10 functions remapped  3 scriptstructs remapped)
+[2020.03.28-15.48.27:932][450]LogContentBrowser: Native class hierarchy populated in 0.0153 seconds. Added 2393 classes and 506 folders.
+[2020.03.28-15.48.27:936][450]Display: HotReload took  0.3s.
+[2020.03.28-15.50.39:279][844]LogHotReload: New module detected: UE4Editor-TutorielInventaireC-4746.dll
+[2020.03.28-15.50.40:633][849]LogHotReload: Starting Hot-Reload from IDE
+[2020.03.28-15.50.40:736][849]LogClass: Craft HotReload.
+[2020.03.28-15.50.40:736][849]LogClass: Requirement HotReload.
+[2020.03.28-15.50.40:736][849]LogClass: Item HotReload.
+[2020.03.28-15.50.40:743][849]LogContentBrowser: Native class hierarchy updated for 'TutorielInventaireC' in 0.0025 seconds. Added 5 classes and 2 folders.
+[2020.03.28-15.50.40:745][849]Display: HotReload successful (10 functions remapped  3 scriptstructs remapped)
+[2020.03.28-15.50.40:796][849]LogContentBrowser: Native class hierarchy populated in 0.0156 seconds. Added 2393 classes and 506 folders.
+[2020.03.28-15.50.40:800][849]Display: HotReload took  0.2s.
+[2020.03.28-15.56.01:946][812]LogHotReload: New module detected: UE4Editor-TutorielInventaireC-1823.dll
+[2020.03.28-15.56.03:309][817]LogHotReload: Starting Hot-Reload from IDE
+[2020.03.28-15.56.03:412][817]LogClass: Could not find existing class TutoJoueur in package /Script/TutorielInventaireC for HotReload, assuming new class
+[2020.03.28-15.56.03:412][817]LogClass: Function AddItem is new.
+[2020.03.28-15.56.03:413][817]LogClass: Function AddItems is new.
+[2020.03.28-15.56.03:413][817]LogClass: Function Avant is new.
+[2020.03.28-15.56.03:413][817]LogClass: Function BaisseCraft is new.
+[2020.03.28-15.56.03:413][817]LogClass: Function ChangeInventoryState is new.
+[2020.03.28-15.56.03:413][817]LogClass: Function Droite is new.
+[2020.03.28-15.56.03:413][817]LogClass: Function GetIndexFromID is new.
+[2020.03.28-15.56.03:413][817]LogClass: Function GetNumberFromID is new.
+[2020.03.28-15.56.03:413][817]LogClass: Function MonteCraft is new.
+[2020.03.28-15.56.03:413][817]LogClass: Function RemoveItem is new.
+[2020.03.28-15.56.03:414][817]LogClass: Craft HotReload.
+[2020.03.28-15.56.03:414][817]LogClass: Requirement HotReload.
+[2020.03.28-15.56.03:414][817]LogClass: Item HotReload.
+[2020.03.28-15.56.03:420][817]LogHotReload: Re-instancing TutoJoueur after hot-reload.
+[2020.03.28-15.56.03:460][817]LogBlueprint: Error: [Compiler UMG_HUD] Can't connect pins  Target  and  As BP Tuto Joueur : Tuto Joueur Object Reference is not compatible with BP Tuto Joueur Object Reference.
+[2020.03.28-15.56.03:461][817]LogBlueprint: Error: [Compiler UMG_HUD] Can't connect pins  As BP Tuto Joueur  and  Target : BP Tuto Joueur Object Reference is not compatible with Tuto Joueur Object Reference.
+[2020.03.28-15.56.03:461][817]LogBlueprint: Error: [Compiler UMG_HUD] Can't connect pins  As BP Tuto Joueur  and  Target : BP Tuto Joueur Object Reference is not compatible with Tuto Joueur Object Reference.
+[2020.03.28-15.56.03:462][817]LogBlueprint: Error: [Compiler UMG_HUD] Can't connect pins  Target  and  As BP Tuto Joueur : Tuto Joueur Object Reference is not compatible with BP Tuto Joueur Object Reference.
+[2020.03.28-15.56.03:462][817]LogBlueprint: Error: [Compiler UMG_HUD] Can't connect pins  As BP Tuto Joueur  and  Target : BP Tuto Joueur Object Reference is not compatible with Tuto Joueur Object Reference.
+[2020.03.28-15.56.03:462][817]LogBlueprint: Error: [Compiler UMG_HUD] Can't connect pins  Target  and  As BP Tuto Joueur : Tuto Joueur Object Reference is not compatible with BP Tuto Joueur Object Reference.
+[2020.03.28-15.56.03:465][817]LogBlueprint: Error: [Compiler UMG_Item] Can't connect pins  Target  and  As BP Tuto Joueur : Tuto Joueur Object Reference is not compatible with BP Tuto Joueur Object Reference.
+[2020.03.28-15.56.03:465][817]LogBlueprint: Error: [Compiler UMG_Item] Can't connect pins  As BP Tuto Joueur  and  Target : BP Tuto Joueur Object Reference is not compatible with Tuto Joueur Object Reference.
+[2020.03.28-15.56.03:470][817]LogBlueprint: Error: [Compiler UMG_HUD] Binding: Property ' VisibilityDelegate ' on Widget ' BordureInventaire ': Binding: 'GetInventaireVisible' : 'GetInventaireVisible' was not found on 'UMG HUD'.
+[2020.03.28-15.56.03:476][817]LogBlueprint: Warning: [Compiler UMG_HUD] [3935.41] Compile of UMG_HUD failed. 7 Fatal Issue(s) 0 Warning(s) [in 53 ms] (/Game/AddingContent/UMG/UMG_HUD.UMG_HUD)
+[2020.03.28-15.56.03:476][817]LogBlueprint: Warning: [Compiler UMG_Item] [3935.41] Compile of UMG_Item failed. 2 Fatal Issue(s) 0 Warning(s) [in 53 ms] (/Game/AddingContent/UMG/UMG_Item.UMG_Item)
+[2020.03.28-15.56.03:539][817]LogContentBrowser: Native class hierarchy updated for 'TutorielInventaireC' in 0.0025 seconds. Added 5 classes and 2 folders.
+[2020.03.28-15.56.03:541][817]Display: HotReload successful (2 functions remapped  3 scriptstructs remapped)
+[2020.03.28-15.56.03:592][817]LogContentBrowser: Native class hierarchy populated in 0.0166 seconds. Added 2393 classes and 506 folders.
+[2020.03.28-15.56.03:597][817]Display: HotReload took  0.3s.
+[2020.03.28-15.57.45:947][124]LogHotReload: New module detected: UE4Editor-TutorielInventaireC-6186.dll
+[2020.03.28-15.57.47:301][129]LogHotReload: Starting Hot-Reload from IDE
+[2020.03.28-15.57.47:405][129]LogClass: Craft HotReload.
+[2020.03.28-15.57.47:405][129]LogClass: Requirement HotReload.
+[2020.03.28-15.57.47:405][129]LogClass: Item HotReload.
+[2020.03.28-15.57.47:412][129]LogContentBrowser: Native class hierarchy updated for 'TutorielInventaireC' in 0.0025 seconds. Added 5 classes and 2 folders.
+[2020.03.28-15.57.47:414][129]Display: HotReload successful (12 functions remapped  3 scriptstructs remapped)
+[2020.03.28-15.57.47:460][129]LogContentBrowser: Native class hierarchy populated in 0.0153 seconds. Added 2393 classes and 506 folders.
+[2020.03.28-15.57.47:464][129]Display: HotReload took  0.2s.
+[2020.03.28-15.58.22:086][631]LogTemp: Executing iPhonePackager certificates Engine -bundlename com.YourCompany.TutorielInventaireC
+[2020.03.28-15.58.22:086][631]LogTemp: CWD: A:\UnrealEngine\UE_4.17\Engine\Binaries\DotNET\IOS
+[2020.03.28-15.58.22:086][631]LogTemp: Initial Dir: A:\UnrealEngine\UE_4.17
+[2020.03.28-15.58.22:086][631]LogTemp: Env CWD: A:\UnrealEngine\UE_4.17\Engine\Binaries\DotNET\IOS
+[2020.03.28-15.58.22:086][631]LogTemp: BranchPath = TOCH-PC/A/UnrealEngine/UE_4.17/Engine/Binaries --- GameBranchPath = TOCH-PC/A/UnrealEngine/UE_4.17/Engine/Binaries
+[2020.03.28-15.58.22:086][631]LogTemp: MATCHED-Provision:,File:,Cert:
+[2020.03.28-15.59.47:777][795]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Niveau" FILE="../../../../../programmation/TutorielInventaireC/Content/Niveau.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2020.03.28-15.59.47:958][795]LogSavePackage: Save=89.90ms
+[2020.03.28-15.59.47:958][795]LogSavePackage: Moving '../../../../../programmation/TutorielInventaireC/Saved/Niveau20DA4AE44259C5F42A0F5FBA3EBBF04A.tmp' to '../../../../../programmation/TutorielInventaireC/Content/Niveau.umap'
+[2020.03.28-15.59.47:987][795]LogSavePackage: Display: Finished SavePackage ../../../../../programmation/TutorielInventaireC/Content/Niveau.umap
+[2020.03.28-15.59.48:049][795]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Niveau_BuiltData" FILE="../../../../../programmation/TutorielInventaireC/Content/Niveau_BuiltData.uasset" SILENT=true
+[2020.03.28-15.59.48:144][795]LogSavePackage: Save=82.96ms
+[2020.03.28-15.59.48:144][795]LogSavePackage: Moving '../../../../../programmation/TutorielInventaireC/Saved/Niveau_BuiltData417A91B4417813D6591F4680A6E46871.tmp' to '../../../../../programmation/TutorielInventaireC/Content/Niveau_BuiltData.uasset'
+[2020.03.28-15.59.48:146][795]LogSavePackage: Display: Finished SavePackage ../../../../../programmation/TutorielInventaireC/Content/Niveau_BuiltData.uasset
+[2020.03.28-15.59.54:223][283]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Niveau" FILE="../../../../../programmation/TutorielInventaireC/Content/Niveau.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2020.03.28-15.59.54:276][283]LogSavePackage: Save=37.32ms
+[2020.03.28-15.59.54:276][283]LogSavePackage: Moving '../../../../../programmation/TutorielInventaireC/Saved/Niveau38ABF2E54B801B77904664BADF05E993.tmp' to '../../../../../programmation/TutorielInventaireC/Content/Niveau.umap'
+[2020.03.28-15.59.54:278][283]LogSavePackage: Display: Finished SavePackage ../../../../../programmation/TutorielInventaireC/Content/Niveau.umap
+[2020.03.28-15.59.54:329][283]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Niveau_BuiltData" FILE="../../../../../programmation/TutorielInventaireC/Content/Niveau_BuiltData.uasset" SILENT=true
+[2020.03.28-15.59.54:353][283]LogSavePackage: Save=18.15ms
+[2020.03.28-15.59.54:353][283]LogSavePackage: Moving '../../../../../programmation/TutorielInventaireC/Saved/Niveau_BuiltData81F9872946C143AC9C435B8FBF5875BE.tmp' to '../../../../../programmation/TutorielInventaireC/Content/Niveau_BuiltData.uasset'
+[2020.03.28-15.59.54:354][283]LogSavePackage: Display: Finished SavePackage ../../../../../programmation/TutorielInventaireC/Content/Niveau_BuiltData.uasset
+[2020.03.28-15.59.55:314][379]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Niveau" FILE="../../../../../programmation/TutorielInventaireC/Content/Niveau.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2020.03.28-15.59.55:366][379]LogSavePackage: Save=36.83ms
+[2020.03.28-15.59.55:366][379]LogSavePackage: Moving '../../../../../programmation/TutorielInventaireC/Saved/NiveauA22555B44A70ECDB3B2500AC9DC1038B.tmp' to '../../../../../programmation/TutorielInventaireC/Content/Niveau.umap'
+[2020.03.28-15.59.55:368][379]LogSavePackage: Display: Finished SavePackage ../../../../../programmation/TutorielInventaireC/Content/Niveau.umap
+[2020.03.28-15.59.55:420][379]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Niveau_BuiltData" FILE="../../../../../programmation/TutorielInventaireC/Content/Niveau_BuiltData.uasset" SILENT=true
+[2020.03.28-15.59.55:444][379]LogSavePackage: Save=18.90ms
+[2020.03.28-15.59.55:444][379]LogSavePackage: Moving '../../../../../programmation/TutorielInventaireC/Saved/Niveau_BuiltDataEEF4ECD24CE162BDE67293987445956B.tmp' to '../../../../../programmation/TutorielInventaireC/Content/Niveau_BuiltData.uasset'
+[2020.03.28-15.59.55:446][379]LogSavePackage: Display: Finished SavePackage ../../../../../programmation/TutorielInventaireC/Content/Niveau_BuiltData.uasset
+[2020.03.28-15.59.55:982][430]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Niveau" FILE="../../../../../programmation/TutorielInventaireC/Content/Niveau.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2020.03.28-15.59.56:034][430]LogSavePackage: Save=37.26ms
+[2020.03.28-15.59.56:035][430]LogSavePackage: Moving '../../../../../programmation/TutorielInventaireC/Saved/NiveauDA1944F947FA995862620CB1EACEFFD3.tmp' to '../../../../../programmation/TutorielInventaireC/Content/Niveau.umap'
+[2020.03.28-15.59.56:036][430]LogSavePackage: Display: Finished SavePackage ../../../../../programmation/TutorielInventaireC/Content/Niveau.umap
+[2020.03.28-15.59.56:092][430]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Niveau_BuiltData" FILE="../../../../../programmation/TutorielInventaireC/Content/Niveau_BuiltData.uasset" SILENT=true
+[2020.03.28-15.59.56:116][430]LogSavePackage: Save=18.73ms
+[2020.03.28-15.59.56:116][430]LogSavePackage: Moving '../../../../../programmation/TutorielInventaireC/Saved/Niveau_BuiltDataA4986C4747962E949263C5AAA75DCD68.tmp' to '../../../../../programmation/TutorielInventaireC/Content/Niveau_BuiltData.uasset'
+[2020.03.28-15.59.56:118][430]LogSavePackage: Display: Finished SavePackage ../../../../../programmation/TutorielInventaireC/Content/Niveau_BuiltData.uasset

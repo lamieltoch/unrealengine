@@ -15,6 +15,22 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define TutorielInventaireC_Source_TutorielInventaireC_TutoJoueur_h_18_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execBaisseCraft) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->BaisseCraft(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMonteCraft) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->MonteCraft(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execDroite) \
 	{ \
 		P_GET_PROPERTY(UFloatProperty,Z_Param_value); \
@@ -89,6 +105,22 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 
 #define TutorielInventaireC_Source_TutorielInventaireC_TutoJoueur_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execBaisseCraft) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->BaisseCraft(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMonteCraft) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->MonteCraft(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execDroite) \
 	{ \

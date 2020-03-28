@@ -18,10 +18,12 @@ void EmptyLinkFunctionForGeneratedCodeTutoJoueur() {}
 	TUTORIELINVENTAIREC_API UClass* Z_Construct_UClass_ATutoJoueur();
 	TUTORIELINVENTAIREC_API UFunction* Z_Construct_UFunction_ATutoJoueur_AddItems();
 	TUTORIELINVENTAIREC_API UFunction* Z_Construct_UFunction_ATutoJoueur_Avant();
+	TUTORIELINVENTAIREC_API UFunction* Z_Construct_UFunction_ATutoJoueur_BaisseCraft();
 	TUTORIELINVENTAIREC_API UFunction* Z_Construct_UFunction_ATutoJoueur_ChangeInventoryState();
 	TUTORIELINVENTAIREC_API UFunction* Z_Construct_UFunction_ATutoJoueur_Droite();
 	TUTORIELINVENTAIREC_API UFunction* Z_Construct_UFunction_ATutoJoueur_GetIndexFromID();
 	TUTORIELINVENTAIREC_API UFunction* Z_Construct_UFunction_ATutoJoueur_GetNumberFromID();
+	TUTORIELINVENTAIREC_API UFunction* Z_Construct_UFunction_ATutoJoueur_MonteCraft();
 	TUTORIELINVENTAIREC_API UFunction* Z_Construct_UFunction_ATutoJoueur_RemoveItem();
 	TUTORIELINVENTAIREC_API UClass* Z_Construct_UClass_ATutoJoueur_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
@@ -37,10 +39,12 @@ void EmptyLinkFunctionForGeneratedCodeTutoJoueur() {}
 			{ "AddItem", (Native)&ATutoJoueur::execAddItem },
 			{ "AddItems", (Native)&ATutoJoueur::execAddItems },
 			{ "Avant", (Native)&ATutoJoueur::execAvant },
+			{ "BaisseCraft", (Native)&ATutoJoueur::execBaisseCraft },
 			{ "ChangeInventoryState", (Native)&ATutoJoueur::execChangeInventoryState },
 			{ "Droite", (Native)&ATutoJoueur::execDroite },
 			{ "GetIndexFromID", (Native)&ATutoJoueur::execGetIndexFromID },
 			{ "GetNumberFromID", (Native)&ATutoJoueur::execGetNumberFromID },
+			{ "MonteCraft", (Native)&ATutoJoueur::execMonteCraft },
 			{ "RemoveItem", (Native)&ATutoJoueur::execRemoveItem },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, AnsiFuncs, ARRAY_COUNT(AnsiFuncs));
@@ -108,6 +112,22 @@ void EmptyLinkFunctionForGeneratedCodeTutoJoueur() {}
 #if WITH_METADATA
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Deplacment"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("TutoJoueur.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ATutoJoueur_BaisseCraft()
+	{
+		UObject* Outer = Z_Construct_UClass_ATutoJoueur();
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("BaisseCraft"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), nullptr, (EFunctionFlags)0x00020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("TutoJoueur.h"));
 #endif
 		}
@@ -200,6 +220,22 @@ void EmptyLinkFunctionForGeneratedCodeTutoJoueur() {}
 		}
 		return ReturnFunction;
 	}
+	UFunction* Z_Construct_UFunction_ATutoJoueur_MonteCraft()
+	{
+		UObject* Outer = Z_Construct_UClass_ATutoJoueur();
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("MonteCraft"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), nullptr, (EFunctionFlags)0x00020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("TutoJoueur.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UFunction* Z_Construct_UFunction_ATutoJoueur_RemoveItem()
 	{
 		struct TutoJoueur_eventRemoveItem_Parms
@@ -242,10 +278,12 @@ void EmptyLinkFunctionForGeneratedCodeTutoJoueur() {}
 				OuterClass->LinkChild(Z_Construct_UFunction_ATutoJoueur_AddItem());
 				OuterClass->LinkChild(Z_Construct_UFunction_ATutoJoueur_AddItems());
 				OuterClass->LinkChild(Z_Construct_UFunction_ATutoJoueur_Avant());
+				OuterClass->LinkChild(Z_Construct_UFunction_ATutoJoueur_BaisseCraft());
 				OuterClass->LinkChild(Z_Construct_UFunction_ATutoJoueur_ChangeInventoryState());
 				OuterClass->LinkChild(Z_Construct_UFunction_ATutoJoueur_Droite());
 				OuterClass->LinkChild(Z_Construct_UFunction_ATutoJoueur_GetIndexFromID());
 				OuterClass->LinkChild(Z_Construct_UFunction_ATutoJoueur_GetNumberFromID());
+				OuterClass->LinkChild(Z_Construct_UFunction_ATutoJoueur_MonteCraft());
 				OuterClass->LinkChild(Z_Construct_UFunction_ATutoJoueur_RemoveItem());
 
 				UProperty* NewProp_Inventaire = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Inventaire"), RF_Public|RF_Transient|RF_MarkAsNative) UArrayProperty(CPP_PROPERTY_BASE(Inventaire, ATutoJoueur), 0x0010000000000005);
@@ -259,10 +297,12 @@ void EmptyLinkFunctionForGeneratedCodeTutoJoueur() {}
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATutoJoueur_AddItem(), "AddItem"); // 2981628312
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATutoJoueur_AddItems(), "AddItems"); // 2366579870
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATutoJoueur_Avant(), "Avant"); // 35026932
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATutoJoueur_BaisseCraft(), "BaisseCraft"); // 3990297041
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATutoJoueur_ChangeInventoryState(), "ChangeInventoryState"); // 3986534341
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATutoJoueur_Droite(), "Droite"); // 1144936070
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATutoJoueur_GetIndexFromID(), "GetIndexFromID"); // 2221681162
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATutoJoueur_GetNumberFromID(), "GetNumberFromID"); // 2875963284
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATutoJoueur_MonteCraft(), "MonteCraft"); // 1436587591
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATutoJoueur_RemoveItem(), "RemoveItem"); // 1414998299
 				static TCppClassTypeInfo<TCppClassTypeTraits<ATutoJoueur> > StaticCppClassTypeInfo;
 				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
@@ -289,7 +329,7 @@ void EmptyLinkFunctionForGeneratedCodeTutoJoueur() {}
 		check(OuterClass->GetClass());
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATutoJoueur, 3308484558);
+	IMPLEMENT_CLASS(ATutoJoueur, 743478730);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ATutoJoueur(Z_Construct_UClass_ATutoJoueur, &ATutoJoueur::StaticClass, TEXT("/Script/TutorielInventaireC"), TEXT("ATutoJoueur"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ATutoJoueur);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
