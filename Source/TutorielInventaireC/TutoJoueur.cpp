@@ -4,7 +4,7 @@
 #include "Engine.h"
 #include "TutoItem.h"
 //#include "TutoDataBase.h"
-
+#include <algorithm>
 
 // Sets default values
 ATutoJoueur::ATutoJoueur()
@@ -142,11 +142,11 @@ void ATutoJoueur::RemoveItem(int32 ID)
 }
 
 inline void ATutoJoueur::AjouterObjet() {
-	AddItem(0);
+	AddItem(3);
 }
 
 inline void ATutoJoueur::SupprimerObjet() {
-	RemoveItem(0);
+	RemoveItem(3);
 }
 
 void ATutoJoueur::Ramasser()
@@ -161,6 +161,17 @@ void ATutoJoueur::Ramasser()
 		}
 
 		AddItem(TheItem->info.ID);
+	}
+
+	if (InventaireVisuel) {
+		bool yaAssezItems = GetEnoughItem(IndexCraft);
+		if (GEngine) {
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, yaAssezItems ? TEXT("true") : TEXT("false"));
+		}
+
+		if (yaAssezItems) {
+			CraftItem(IndexCraft);
+		}
 	}
 }
 
@@ -206,6 +217,38 @@ void ATutoJoueur::BaisseCraft()
 {
 	if (InventaireVisuel && IndexCraft < Craft.Num()) {
 		IndexCraft++;
+	}
+}
+
+bool ATutoJoueur::GetEnoughItem(int32 indexOfCraft)
+{
+	bool resultat = true;
+	FCraft craft = Craft[indexOfCraft];
+
+	for (int32 i = 0; i < craft.Requirements.Num(); i++) {
+		int32 nombrePossede = GetNumberFromID(craft.Requirements[i].ID);
+		if (nombrePossede < craft.Requirements[i].Quantite) {
+			resultat = false;
+			return resultat;
+		}
+	}
+
+
+	return resultat;
+}
+
+void ATutoJoueur::RemoveItemWithIDAndNumber(int32 TheID, int32 TheNumber)
+{
+	int32 indexItem = GetIndexFromID(TheID);
+	int32 Quantite = Inventaire[indexItem].Quantite;
+	Inventaire[indexItem].Quantite = std::max(0, Quantite - TheNumber);
+}
+
+void ATutoJoueur::CraftItem(int32 TheIndex)
+{
+	Craft[TheIndex].Quantite++;
+	for (int32 i = 0; i < Craft[TheIndex].Requirements.Num(); i++) {
+		RemoveItemWithIDAndNumber(Craft[TheIndex].Requirements[i].ID, Craft[TheIndex].Requirements[i].Quantite);
 	}
 }
 

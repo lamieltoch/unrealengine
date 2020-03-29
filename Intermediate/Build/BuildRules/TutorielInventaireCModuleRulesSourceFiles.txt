@@ -1,3 +1,0 @@
-A:\programmation\TutorielInventaireC\Source\TutorielInventaireC\TutorielInventaireC.Build.cs
-A:\programmation\TutorielInventaireC\Source\TutorielInventaireC.Target.cs
-A:\programmation\TutorielInventaireC\Source\TutorielInventaireCEditor.Target.cs

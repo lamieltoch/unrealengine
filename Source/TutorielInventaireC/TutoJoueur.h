@@ -88,4 +88,13 @@ public:
 
 	UFUNCTION()
 		void BaisseCraft();
+
+	UFUNCTION(BlueprintCallable, Category = "Gameplay")
+		bool GetEnoughItem(int32 indexOfCraft);
+
+	UFUNCTION(BlueprintCallable, Category = "Gameplay")
+		void RemoveItemWithIDAndNumber(int32 TheID, int32 TheNumber);
+
+	UFUNCTION(BlueprintCallable, Category = "Gameplay")
+		void CraftItem(int32 TheIndex);
 };
